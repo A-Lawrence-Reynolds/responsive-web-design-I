@@ -1,3 +1,485 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.parent-div {
+    width: 975px;
+    margin: auto;
+}
+
+
+.bottom-bordered-header {
+    border-bottom: 3px solid lightslategray;
+}
+
+.header .nav {
+    height: 1;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: ;
+    z-index: 2;
+}
+
+.header-bar {
+    display: flex;
+}
+
+.header-image-container {
+    flex: 1;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+}
+
+.nav a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.header-slogan-container {
+    display: flex;
+    flex: 1;
+
+}
+
+.code {
+    width: 43%;
+}
+
+.slogan {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 60px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: flex;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    width: 25%;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    padding-top: 7%;
+    align-items: center
+}
+
+
+.middle-img {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+div p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.features-about {
+    display: flex;
+    /* width: 49%; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.features {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+}
+
+.about {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+.services-product-vision-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 4%;
+
+
+}
+
+.services {
+    display: flex;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.product {
+    display: flex;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.vision {
+    display: flex;
+    justify-content: center;
+    width: 32%;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Media querys starts here ............... */
+
+
+@media screen and (max-width:800px) {
+    .parent-div {
+        width: 85%;
+
+    }
+
+    .header .bottom-bordered-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .bottom-bordered-header div {
+        padding: 7% 0%
+    }
+
+    .header .nav {
+        justify-content: space-evenly;
+        width: 100%;
+        display: flex;
+
+    }
+
+
+
+    .header-bar {
+        display: flex;
+        flex-direction: column-reverse;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-image {}
+
+    div .header-image-container {
+        display: flex;
+        justify-items: center;
+    }
+
+    .code {
+        display: none;
+    }
+
+    .slogan {
+        align-items: center;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .button {
+        width: 30%;
+        height: 7%;
+        margin: 0% auto 4%;
+        align-items: center;
+        padding: unset;
+    }
+}
+
+/* tablet media querys end here.................. */
+
+
+/* phone media querys start here.................... */
+@media screen and (max-width:500px) {
+
+    div.header-bar nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* a {
+        padding-top: 4%;
+        border: .5% solid grey;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .features-about {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 4%;
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 2%;
+    }
+
+    .features {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 2%;
+    }
+
+    .services-product-vision-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .services {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .product {
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .vision {
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+}
