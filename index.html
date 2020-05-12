@@ -1,158 +1,103 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Great Idea - Responsive I</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-</head>
-
-<body>
-  <!doctype html>
-
-  <html lang="en">
-
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Toggler</title>
 
-    <title>Great Idea!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <script defer src="app.js"></script>
   </head>
 
-  <body>
-    <div class=" parent-div">
-      <header class="header bottom-bordered-header">
-        <div class="header-bar">
+  <body class="light">
+    <!-- Navbar -->
 
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
 
+        <!-- Dropdown -->
 
+        <li class="nav-item has-dropdown">
+          <a href="#">Theme</a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a id="light" href="#">light</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="dark" href="#">dark</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="solar" href="#">solarize</a>
+            </li>
+          </ul>
+        </li>
 
-          <nav class="nav">
-            <a href="#services">Services</a>
-            <a href="#Product">Product</a>
-            <a href="#vision">Vision</a>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <div class="header-image-container">
-            <img class="header-image" class="logo1" src="img/logo.png" alt="Great Idea! Company logo.">
-          </div>
-        </div>
+        <li class="nav-item">Login</li>
+      </ul>
+    </nav>
 
+    <header>
+      <img src="header-img.png" class="logo" />
+      <h1>Front-End Web Development,<br />Fired Up</h1>
 
+      <p>Flutter, Firebase, JavaScript, Node.js</p>
+    </header>
 
-        <div class="header-slogan-container">
-          <p class="slogan">
-            Innovation
-            On
-            Demand
-          </p>
-          <img class="code" src="img/header-img.png" alt="Image of a code snippet" />
-        </div>
-        <button class="button">Get Started </button>
-
-
-      </header>
-
-      <content>
-
-        <div class="features-about">
-          <div class="features">
-            <h1>Features</h1>
-            <span>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm
-              nisi.
-              Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-            </span>
-
-          </div>
-          <div class="about">
-            <h1>About</h1>
-            <span> Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm
-              nisi.
-              Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-            </span>
-          </div>
-        </div>
-        <div>
-          <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
-        </div>
-        <div class="services-product-vision-container">
-          <div class="services">
-            <h1>Services</h1>
-            <span> elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi.
-              Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-            </span>
-          </div>
-
-          <div class="product">
-            <h1>Product</h1>
-            <span>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm
-              nisi.
-              Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-            </span>
-          </div>
-
-          <div class="vision">
-            <h1>Vision</h1>
-            <span>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm
-              nisi.
-              Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-            </span>
-          </div>
-        </div>
-      </content>
-      </section>
-
-      <section>
-
-        <footer class="footer">
-
-          <div class="footer-container">
-            <div class="footer-info">
-              <p>Contact</p>
-              <br>
-              <p>123 Way 456 Street</p>
-              <br>
-              <p>Somewhere, USA</p>
-              <br>
-              <p>(888) 888-8888</p>
-              <br>
-              <br>
-              <p>sales@greatidea.io</p>
-            </div>
-          </div>
-          <div class="copyright">
-            <p>Copyright Great Idea! 2018</ps>
-          </div>
-        </footer>
-      </section>
+    <main class="main">
+      <div class='main-div'>
+      <h3>Sailor Ipsum</h3>
+      <p>
+        Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+        yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog
+        yardarm hempen halter furl. Swab barque interloper chantey doubloon
+        starboard grog black jack gangway rutters.
+      </p>
+      <p>
+        Deadlights jack lad schooner scallywag dance the hempen jig carouser
+        broadside cable strike colors. Bring a spring upon her cable holystone
+        blow the man down spanker Shiver me timbers to go on account lookout
+        wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot
+        yardarm spyglass sheet transom heave to.
+      </p>
+      <p>
+        Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway.
+        Case shot Shiver me timbers gangplank crack Jennys tea cup ballast
+        Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas
+        boatswain schooner gaff booty Jack Tar transom spirits.
+      </p>
+</div>
+<div class='main-div'>
+      <h3>Sailor Ipsum</h3>
+    
+    
+      <p>
+        Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
+        yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog
+        yardarm hempen halter furl. Swab barque interloper chantey doubloon
+        starboard grog black jack gangway rutters.
+      </p>
+      <p>
+        Deadlights jack lad schooner scallywag dance the hempen jig carouser
+        broadside cable strike colors. Bring a spring upon her cable holystone
+        blow the man down spanker Shiver me timbers to go on account lookout
+        wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot
+        yardarm spyglass sheet transom heave to.
+      </p>
+      <p>
+        Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway.
+        Case shot Shiver me timbers gangplank crack Jennys tea cup ballast
+        Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas
+        boatswain schooner gaff booty Jack Tar transom spirits.
+      </p>
     </div>
-
+    </main>
   </body>
-
-  </html>
-
-
-
-
-
-
-
-
-</body>
-
 </html>
